@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: antiquewhite;
+  width: 100vw;
+  overflow: hidden;
+}
+.bar {
+  float: right;
+  margin: 14px;
+  width: fit-content;
+  height: fit-content;
+}
+.bar img {
+  width: 50px;
+  height: 50px;
+}
+.bar:hover {
+  transform: rotateZ(90deg);
+  transition: 1s;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 32vw;
+  height: 100vh;
+  background-color: rgb(23, 23, 23);
+  position: fixed;
+  box-shadow: 8px 8px 4px grey;
+}
+.main1 {
+  transform: translateX(-100%);
+  transition: transform 2s;
+}
+.main2 {
+  transform: translateX(0%);
+  transition: transform 2s;
+}
+.child1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0;
+}
+.child1 h2 {
+  font-size: 30px;
+  margin: 0px;
+  color: rgb(30, 237, 171);
+  text-shadow: 4px 4px 5px grey;
+  font-weight: bolder;
+}
+.child1 button {
+  margin: 5px;
+}
+.child1 button:hover {
+  transform: rotateZ(14400deg);
+  transition: 10s;
+}
+.child2 {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.child2 a {
+  text-decoration: none;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: medium;
+  color: rgb(32, 207, 199);
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+}
+.child2 a:hover {
+  background-color: grey;
+}
+.child3 {
+  list-style: none;
+  padding: 0%;
+  text-align: center;
+}
+li {
+  display: inline;
+}
+.child3 li a img {
+  width: 33px;
+  height: 33px;
+  margin: 7px;
+  padding: 2px;
+}
+.child3 li a img:hover {
+  width: 35px;
+  height: 35px;
+  padding: 0%;
+  margin-top: 1px;
+}
+@media all and (max-width:860px) {
+   
+    .main{
+        width:100vw
+    }
+    .child3 li a img{
+        padding: 16px;
+    }
+}
